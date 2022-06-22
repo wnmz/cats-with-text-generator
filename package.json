@@ -2,7 +2,8 @@
   "name": "cats-generator",
   "version": "1.0.0",
   "description": "Simple package that will help you to generate cat images with text",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "directories": {
     "lib": "lib"
   },
