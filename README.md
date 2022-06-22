@@ -13,7 +13,7 @@ npm install cats-generator
 * `getImage()` - Makes request to 'https://cataas.com/cat' and returns `Promise<CatImage>`.
 ### Class — CatImage
 * `toBuffer()` - Return cat image buffer.
-* `addText(text, textOptions)` - Adds text to image.
+* `addText(text, textOptions)` - Adds text to image and returns `Promise<CatImage>`.
 * * text - string
 * * textOptions - TextOptions
 ### Enum — TextPosition
