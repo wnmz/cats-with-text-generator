@@ -32,15 +32,15 @@ npm install cats-generator
 
 ## Example Usage
 ```js
-import { CatWithTextGenerator, TextOptions, TextPosition } from "cats-generator";
-import { writeFileSync } from "fs";
+const { CatWithTextGenerator, TextOptions, TextPosition } = require("cats-generator");
+const { writeFileSync } =  require("fs");
 
 async function main() {
     try {
         const catGenerator = new CatWithTextGenerator();
         const image = await catGenerator.getImage();
         const text = 'Hello World';
-        const textOptions: TextOptions = {
+        const textOptions = {
             position: TextPosition.BOTTOM_CENTER,
             size: 64,
             font: 'Sans',
