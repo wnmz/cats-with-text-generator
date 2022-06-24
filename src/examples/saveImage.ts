@@ -7,17 +7,18 @@ async function main() {
         const image = await catGenerator.getImage();
         const text = 'Hello World';
         const textOptions: TextOptions = {
-            position: TextPosition.BOTTOM_CENTER,
+            position: TextPosition.CENTER,
             size: 64,
             font: 'Sans',
             outlined: true,
-            color: 'white'
+            color: 'white',
         };
+
         const imageWithText = await image.addText(text, textOptions);
         const imageBuffer = imageWithText.toBuffer();
         writeFileSync('./file.png', imageBuffer);
         console.log('Image saved!');
-    } catch(e) {
+    } catch (e) {
         console.error(e);
     }
 }
