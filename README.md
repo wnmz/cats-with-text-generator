@@ -29,7 +29,7 @@ BOTTOM_CENTER,
 BOTTOM_LEFT,
 BOTTOM_RIGHT,
 CUSTOM`
-* * When you use `CUSTOM` you must set 
+* * When you use `CUSTOM` you must use `customPositionCoords` in `TextOptions`. 
 
 ### Interface — TextOptions
 * position: TextPosition
